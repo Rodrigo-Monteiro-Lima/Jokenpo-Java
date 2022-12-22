@@ -15,6 +15,10 @@ public class Player {
     this.name = name;
   }
 
+  public void incrementScore() {
+    setScore(getScore() + 1);
+  }
+
   public Integer getScore() {
     return score;
   }

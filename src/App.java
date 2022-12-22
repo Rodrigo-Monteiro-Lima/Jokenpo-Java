@@ -12,6 +12,7 @@ public class App {
         Player user = new Player(playerName);
         Player IA = new Player("IA");
 
+        System.out.println("");
         System.out.print(playerName + ", informe quantos rounds você deseja jogar: ");
         int rounds = scan.nextInt();
 
@@ -19,6 +20,8 @@ public class App {
     }
 
     public static void main(String[] args) throws Exception {
-        startGame();
+        Jokenpo jokenpo = startGame();
+        jokenpo.toPlay();
+        jokenpo.showFinalResult();
     }
 }
